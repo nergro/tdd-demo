@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import "./App.css";
 import { GlobalStyle } from "./globalStyle";
 import { Route, Switch } from "react-router-dom";
-import { Main } from "./Main";
+import { Main } from "./Main/Main";
 import { Example1 } from "./Examples/Example1";
 import { Example2 } from "./Examples/Example2";
 import { Example3 } from "./Examples/Example3";
