@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC } from "react";
+import "./App.css";
+import { GlobalStyle } from "./globalStyle";
+import { Route, Switch } from "react-router-dom";
+import { Main } from "./Main";
+import { Example1 } from "./Examples/Example1";
+import { Example2 } from "./Examples/Example2";
+import { Example3 } from "./Examples/Example3";
 
-function App() {
+export const App: FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyle />
+      <Switch>
+        <Route path="/" exact component={Main} />
+        <Route path="/example-1" exact component={Example1} />
+        <Route path="/example-2" exact component={Example2} />
+        <Route path="/example-3" exact component={Example3} />
+      </Switch>
     </div>
   );
-}
-
-export default App;
+};
