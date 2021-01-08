@@ -12,5 +12,4 @@ test("renders three example buttons", () => {
 
   testIfButtonExists("Example 1");
   testIfButtonExists("Example 2");
-  testIfButtonExists("Example 3");
 });

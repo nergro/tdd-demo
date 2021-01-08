@@ -1,14 +1,11 @@
 import React, { FC, useState, MouseEvent } from "react";
 import styled from "styled-components/macro";
 import { Button } from "Atoms/Button";
+import { H1 } from "Atoms/text";
+import { List, ListItem } from "Atoms/List";
 
 const Container = styled.div`
   padding: 50px;
-`;
-
-const Title = styled.h1`
-  margin: 0;
-  color: #ffffff;
 `;
 
 const Form = styled.form`
@@ -34,21 +31,6 @@ const SubmitButton = styled(Button)`
   width: 150px;
 `;
 
-const ListTitle = styled.h2`
-  color: #ffffff;
-`;
-
-const List = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style: none;
-`;
-
-const ListItem = styled.li`
-  color: #ffffff;
-  margin-bottom: 15px;
-`;
-
 export const Example1: FC = () => {
   const [inputTask, setInputTask] = useState<string>("");
   const [tasks, setTasks] = useState<string[]>([
@@ -66,7 +48,7 @@ export const Example1: FC = () => {
   };
   return (
     <Container>
-      <Title>Todo tasks</Title>
+      <H1>Todo tasks</H1>
       <Form onSubmit={onSubmit}>
         <Input
           type="text"

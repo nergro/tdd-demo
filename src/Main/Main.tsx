@@ -18,7 +18,6 @@ export const Main: FC = () => {
         <Buttons>
           <Button onClick={() => history.push("/example-1")}>Example 1</Button>
           <Button onClick={() => history.push("/example-2")}>Example 2</Button>
-          <Button onClick={() => history.push("/example-3")}>Example 3</Button>
         </Buttons>
       </header>
     </div>
