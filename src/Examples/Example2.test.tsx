@@ -43,9 +43,9 @@ test("loads users from api", async () => {
 
     expect(listElement).toBeInTheDocument();
     expect(listElements.length).toEqual(2);
-  });
 
-  await waitFor(() => expect(screen.getByText("Loaded")).toBeInTheDocument());
+    expect(screen.getByText("Loaded")).toBeInTheDocument();
+  });
 });
 
 test("handles error when loading users from api", async () => {
