@@ -9,6 +9,7 @@ const testIfButtonExists = (name: string): void => {
 
 test("renders successfully", () => {
   render(<Main />);
+  //
 });
 
 test("renders two example buttons", () => {
@@ -16,4 +17,5 @@ test("renders two example buttons", () => {
 
   testIfButtonExists("Example 1");
   testIfButtonExists("Example 2");
+  //
 });
