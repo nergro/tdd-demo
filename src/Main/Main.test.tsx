@@ -7,15 +7,9 @@ const testIfButtonExists = (name: string): void => {
   expect(button1).toBeInTheDocument();
 };
 
-test("renders successfully", () => {
-  render(<Main />);
-  //
-});
-
 test("renders two example buttons", () => {
   render(<Main />);
 
   testIfButtonExists("Example 1");
   testIfButtonExists("Example 2");
-  //
 });

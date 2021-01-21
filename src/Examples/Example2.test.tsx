@@ -46,7 +46,6 @@ test("loads users from api", async () => {
 
     expect(screen.getByText("Loaded")).toBeInTheDocument();
   });
-  //
 });
 
 test("handles error when loading users from api", async () => {
@@ -69,5 +68,4 @@ test("handles error when loading users from api", async () => {
   await waitFor(() =>
     expect(screen.getByText("Server error")).toBeInTheDocument()
   );
-  //
 });

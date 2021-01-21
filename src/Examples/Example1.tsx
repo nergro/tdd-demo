@@ -34,17 +34,17 @@ const SubmitButton = styled(Button)`
 export const Example1: FC = () => {
   const [inputTask, setInputTask] = useState<string>("");
   const [tasks, setTasks] = useState<string[]>([
-    // "Dishes",
-    // "Shopping",
-    // "Read a book",
+    "Dishes",
+    "Shopping",
+    "Read a book",
   ]);
 
   const onSubmit = (e: MouseEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    // if (inputTask) {
-    //   setTasks([...tasks, inputTask]);
-    //   setInputTask("");
-    // }
+    if (inputTask) {
+      setTasks([...tasks, inputTask]);
+      setInputTask("");
+    }
   };
   return (
     <Container>
